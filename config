@@ -1,0 +1,13 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "github"]
+	url = https://github.com/boyangfu/phptests.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+	pushurl = https://github.com/boyangfu/phptests.git
+	puttykeyfile = ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAgMuGQzobRfke544uQWbFe7leHyUNwJfshN7nwCPl7OZR9aA7cvqC4OZZeAwI/OgMT59khuGki3BW4T2Hk0e+9DxcCDip8tFhVVyVZ/T80Vf/A6vkAFz2qR5j1njcKlhGW+0DEvQ7CNgEMCk38gpwwQfpN8qYodyoCyuAtzXhtFVSy2zVN0xItwMg1es3+UhWrPXc2TkxshlO5l2th/3br4+Lpqe4Z0V7SvK0OSNxBIsn5cb9sMOwE5LyLtPCnru/jS7qcIObi8K7lgUJ61AmXVKOrsRW1Ms0A1BKJPlAdFxzuS6i9Ma5SMszMsp2I0YXxCyu70K4hx+c0N6MXV93VQ== rsa-key-20180528
+[remote]
+	pushdefault = github
