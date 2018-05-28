@@ -1,9 +1,9 @@
 <html>
  <head>
-  <title>PHP-Test</title>
+  <title>Investment Calculator</title>
  </head>
  <body>
-  <?php
+	<?php
 	$servername = "localhost";
 	$username = "root";
 	$password = "password";
@@ -18,13 +18,12 @@
 		{
 		echo "Connection failed: " . $e->getMessage();
 		} 
-   echo '<p>Net worth</p>';
-   $starting_capital = 500000;
-   $annual_growth = 1.07;
-   for ( $i = 0; $i < 10; $i++){
-    echo '<p>Year '.($i+1).': '.$starting_capital.'</p>';
-	$starting_capital = $starting_capital * $annual_growth;
-   }
-  ?>
+	?>
+	<br><br>
+	<form action="display_net_worth.php" method="post">
+	Starting Capital: <input type="text" name="starting_capital"><br>
+	Annual Growth (%): <input type="text" name="annual_growth"><br>
+	<input type="submit" value="Calculate!">
+	
  </body>
 </html>
